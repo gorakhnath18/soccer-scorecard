@@ -1,0 +1,46 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Soccer Matches Schedule</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap" rel="stylesheet" />
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container header-content">
+      <h1>Soccer Schedule</h1>
+      <div class="controls">
+        <input type="text" id="search" placeholder="Search by team..." />
+        <select id="venueFilter">
+          <option value="">Filter by Venue</option>
+        </select>
+        <select id="sortOrder">
+          <option value="asc">Sort by Date ↑</option>
+          <option value="desc">Sort by Date ↓</option>
+          <option value="status">Sort by Status</option>
+        </select>
+        <button id="toggleMode" title="Toggle Dark/Light Mode">🌙</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div id="matches" class="matches-grid"></div>
+    <button id="loadMoreBtn" class="load-more-btn">Load More Matches</button>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 SoccerSchedule. All rights reserved to gorakhnathjaiswal.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
